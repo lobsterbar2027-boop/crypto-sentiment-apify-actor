@@ -1,0 +1,48 @@
+{
+    "actorSpecification": 1,
+    "name": "crypto-sentiment-tracker-pro",
+    "title": "Crypto Sentiment Tracker Pro (GenVox)",
+    "description": "Real-time cryptocurrency sentiment analysis from Reddit, Twitter, and TikTok. Get BUY/SELL/NEUTRAL signals with confidence scores. Powered by GenVox AI. MCP-enabled for AI assistants.",
+    "version": "1.0",
+    "meta": {
+        "templateId": "node-crawlee-cheerio"
+    },
+    "input": "./.actor/INPUT_SCHEMA.json",
+    "dockerfile": "./Dockerfile",
+    "readme": "./README.md",
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Sentiment Data",
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "transformation": {
+                        "fields": [
+                            "coin",
+                            "signal",
+                            "score",
+                            "confidence",
+                            "sentiment_summary",
+                            "timestamp"
+                        ]
+                    },
+                    "display": {
+                        "component": "table",
+                        "properties": {
+                            "coin": {
+                                "label": "Coin"
+                            },
+                            "signal": {
+                                "label": "Signal"
+                            },
+                            "score": {
+                                "label": "Score"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
