@@ -1,0 +1,24 @@
+{
+    "title": "Crypto Sentiment Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "coin": {
+            "title": "Single Cryptocurrency",
+            "type": "string",
+            "description": "Single crypto symbol (e.g., BTC, ETH, SOL). Leave empty to track multiple coins.",
+            "example": "BTC",
+            "editor": "textfield"
+        },
+        "coins": {
+            "title": "Multiple Cryptocurrencies",
+            "type": "array",
+            "description": "Track multiple coins at once. Ignored if 'coin' is specified.",
+            "editor": "stringList",
+            "default": ["BTC", "ETH", "SOL", "DOGE", "ADA"],
+            "prefill": ["BTC", "ETH", "SOL"],
+            "example": ["BTC", "ETH", "SOL"]
+        }
+    },
+    "required": []
+}
