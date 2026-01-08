@@ -1,0 +1,16 @@
+{
+  "name": "crypto-sentiment-apify-actor",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Crypto sentiment tracker powered by GenVox",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "apify": "^3.0.0",
+    "node-fetch": "^3.3.0"
+  },
+  "author": "BreakTheCubicle",
+  "license": "ISC"
+}
