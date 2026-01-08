@@ -88,7 +88,6 @@ The AI will automatically call this actor and provide insights.
 
 Questions? Reach out:
 - Twitter: @BreakTheCubicle
-- Email: your@email.com
 - GitHub: github.com/lobsterbar2027-boop
 
 ## 📜 License
